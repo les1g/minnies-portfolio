@@ -1,0 +1,55 @@
+/*This is a CSS file for styling a simple HTML document*/
+
+/*Overall font style*/
+body {
+  background-color: #ff69b4; /*Set a light background color for the body*/
+  font-family: "Courier New", monospace;
+  margin: 0; /*Remove default margin*/
+  padding: 80px; /*Add padding to the body for spacing*/
+  text-align: center; /*Center align the text in the body*/
+}
+
+/*About Section styling*/
+/*This class is used to highlight specific text within the document*/
+.highlight {
+  color: #ff69b4;
+  font-weight: bold;
+}
+/*This ID is used to style the heading of the about section*/
+#about {
+  background-color: #f5e0e7;
+}
+
+/*Experience Section styling*/
+/*This ID is used to style the heading of the experience section*/
+#experience {
+  background-color: #f7cddb;
+}
+
+/*Education Section styling*/
+/*This ID is used to style the heading of the education section*/
+#education {
+  background-color: #f0b1c7;
+}
+
+/*Skills Section styling*/
+/*This ID is used to style the heading of the skills section*/
+#skills {
+  background-color: #f18eb1;
+}
+
+/*Table styling*/
+table, th, td {
+  border: 1px solid #050505;
+  margin: 0 auto; /* Center the section */
+  padding: 10px; /* Add padding to the body*/
+  border-collapse: collapse; /* Collapse borders*/
+}
+
+/*Used to style unoredered lists*/
+ul {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left; /*keep bullets and text aligned together*/
+}
+
