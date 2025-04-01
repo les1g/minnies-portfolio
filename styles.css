@@ -1,55 +1,75 @@
-/*This is a CSS file for styling a simple HTML document*/
+/*CSS file for styling HTML document*/
 
-/*Overall font style*/
+/*All page styles*/
+/*Consistent styling for all pages*/
 body {
-  background-color: #ff69b4; /*Set a light background color for the body*/
+  background-color: #ff69b4; 
   font-family: "Courier New", monospace;
-  margin: 0; /*Remove default margin*/
-  padding: 80px; /*Add padding to the body for spacing*/
-  text-align: center; /*Center align the text in the body*/
+  margin: 0; 
+  padding: 80px; 
+  text-align: center; 
 }
-
-/*About Section styling*/
-/*This class is used to highlight specific text within the document*/
+/*Used to highlight specific text within the document*/
 .highlight {
   color: #ff69b4;
   font-weight: bold;
 }
-/*This ID is used to style the heading of the about section*/
+
+/*resume.html specific styles*/
+/*ID is used to style about section*/
 #about {
   background-color: #f5e0e7;
 }
-
-/*Experience Section styling*/
-/*This ID is used to style the heading of the experience section*/
+/*ID is used to style experience section*/
 #experience {
   background-color: #f7cddb;
+  
 }
-
-/*Education Section styling*/
-/*This ID is used to style the heading of the education section*/
+/*ID is used to style education section*/
 #education {
   background-color: #f0b1c7;
 }
-
-/*Skills Section styling*/
-/*This ID is used to style the heading of the skills section*/
+/*ID is used to style skills section*/
 #skills {
   background-color: #f18eb1;
 }
 
-/*Table styling*/
-table, th, td {
-  border: 1px solid #050505;
-  margin: 0 auto; /* Center the section */
-  padding: 10px; /* Add padding to the body*/
-  border-collapse: collapse; /* Collapse borders*/
-}
-
-/*Used to style unoredered lists*/
+/*unordered list styling*/
 ul {
   width: fit-content;
   margin: 0 auto;
-  text-align: left; /*keep bullets and text aligned together*/
+  text-align: left; 
+}
+/*Skill Table styling*/
+table, th, td {
+  border: 1px solid #ff69b4;
+  margin: 0 auto; 
+  padding: 10px; 
+  border-collapse: collapse; 
 }
 
+th {
+  background-color: #f5e0e7;
+}
+
+td {
+  background-color: #f7cddb; 
+}
+
+/*Cover-letter.html specific styles*/
+/*ID is used to style cover-letter section*/
+#cover-letter {
+  background-color: #f0b1c7; 
+  padding: 20px; 
+  border-radius: 5px; 
+  margin: 20px auto; 
+}
+
+/*Career-Goals.html specific styles*/
+/*ID is used to style Career-letter section*/
+#career-goals {
+  background-color: #f0b1c7; 
+  padding: 20px; 
+  border-radius: 5px; 
+  margin: 20px auto; 
+}
