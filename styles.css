@@ -1,7 +1,5 @@
 /*CSS file for styling HTML document*/
-
-/*All page styles*/
-/*Root element styles*/
+/*Color scheme variables*/
 :root {
   --color1: #ff69b4;
   --color2: #f5e0e7;
@@ -10,16 +8,15 @@
   --color5: #f18eb1;
   --color6: #f5568e;
 }
-
+/*General body style*/
 body {
   background-color: var(--color1); 
   font-family: "Courier New", monospace;
+  text-align: center; 
   margin: 0; 
   padding: 80px; 
-  text-align: center; 
 }
-
-/*Used to highlight specific text within the document*/
+/*Pink Highlighter class*/
 .highlight {
   color: var(--color1); 
   font-weight: bold;
