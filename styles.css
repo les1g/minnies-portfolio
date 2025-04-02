@@ -1,39 +1,51 @@
 /*CSS file for styling HTML document*/
 
 /*All page styles*/
-/*Consistent styling for all pages*/
+/*Root element styles*/
+:root {
+  --color1: #ff69b4;
+  --color2: #f5e0e7;
+  --color3: #f7cddb;
+  --color4: #f0b1c7;
+  --color5: #f18eb1;
+  --color6: #f5568e;
+}
+
 body {
-  background-color: #ff69b4; 
+  background-color: var(--color1); 
   font-family: "Courier New", monospace;
   margin: 0; 
   padding: 80px; 
   text-align: center; 
 }
+
 /*Used to highlight specific text within the document*/
 .highlight {
-  color: #ff69b4;
+  color: var(--color1); 
   font-weight: bold;
 }
 
 /*resume.html specific styles*/
 /*ID is used to style about section*/
 #about {
-  background-color: #f5e0e7;
+  background-color: var(--color2);
 }
 /*ID is used to style experience section*/
 #experience {
-  background-color: #f7cddb;
-  
+  background-color: var(--color3);
 }
 /*ID is used to style education section*/
 #education {
-  background-color: #f0b1c7;
+  background-color: var(--color4);
 }
 /*ID is used to style skills section*/
 #skills {
-  background-color: #f18eb1;
+  background-color: var(--color5);
 }
-
+/*ID is used to style contact section*/
+#contact {
+  background-color: var(--color6);
+}
 /*unordered list styling*/
 ul {
   width: fit-content;
@@ -42,24 +54,24 @@ ul {
 }
 /*Skill Table styling*/
 table, th, td {
-  border: 1px solid #ff69b4;
+  border: 1px solid var(--color1);
   margin: 0 auto; 
   padding: 10px; 
   border-collapse: collapse; 
 }
 
 th {
-  background-color: #f5e0e7;
+  background-color: var(--color2);
 }
 
 td {
-  background-color: #f7cddb; 
+  background-color: var(--color3); 
 }
 
 /*Cover-letter.html specific styles*/
 /*ID is used to style cover-letter section*/
 #cover-letter {
-  background-color: #f0b1c7; 
+  background-color: var(--color4); 
   padding: 20px; 
   border-radius: 5px; 
   margin: 20px auto; 
@@ -68,7 +80,7 @@ td {
 /*Career-Goals.html specific styles*/
 /*ID is used to style Career-letter section*/
 #career-goals {
-  background-color: #f0b1c7; 
+  background-color: var(--color4); 
   padding: 20px; 
   border-radius: 5px; 
   margin: 20px auto; 
