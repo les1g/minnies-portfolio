@@ -16,12 +16,15 @@ body {
   margin: 0; 
   padding: 80px; 
 }
-/*Pink Highlighter class*/
-.highlight {
+/*Pink font color class*/
+.pink-text {
   color: var(--color1); 
   font-weight: bold;
 }
-
+/*pink highlighter class*/
+.pink-highlight {
+  background-color: var(--color1);
+}
 /*resume.html specific styles*/
 /*ID is used to style about section*/
 #about {
@@ -49,18 +52,16 @@ ul {
   margin: 0 auto;
   text-align: left; 
 }
-/*Skill Table styling*/
+/*Skills Table styling*/
 table, th, td {
   border: 1px solid var(--color1);
   margin: 0 auto; 
   padding: 10px; 
   border-collapse: collapse; 
 }
-
 th {
   background-color: var(--color2);
 }
-
 td {
   background-color: var(--color3); 
 }
