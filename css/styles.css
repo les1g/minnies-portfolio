@@ -8,57 +8,47 @@
   --color6: #f5568e;
 }
 
-/*General body style*/
+/*Body style*/
 body {
   background-color: var(--color1); 
   font-family: "Courier New", monospace;
 }
 
-/*Pink font color class*/
+/*Pink font*/
 .pink-text {
   color: var(--color1); 
   font-weight: bold;
 }
 
-/*pink highlighter class*/
+/*pink highlighter*/
 .pink-highlight { background-color: var(--color1); }
 
 /*resume.html styles*/
 /*About section*/
 #about { background-color: var(--color2); }
-
 /*Experience section*/
 #experience { background-color: var(--color3); }
-
 /*Education section*/
 #education { background-color: var(--color4); }
-
 /*Skills section*/
-#skills {
-  background-color: var(--color5);
-  /*Table header color*/
-  th { background-color: var(--color2); }
-  /*Table data color*/
-  td { background-color: var(--color3); }
-}
-
-/*Contact section*/
-#contact {
-  background-color: var(--color6);
-  /*Table header color*/
-  th { background-color: var(--color2); }
-  /*Table data color*/
-  td { background-color: var(--color3); }
-}
-
-
-/*Table styling*/
-table, th, td {
+#skills { background-color: var(--color5); }
+#skills table, #skills th, #skills td {
   border: 1px solid var(--color1);
-  margin: 0 auto; 
   padding: 10px; 
   border-collapse: collapse; 
 }
+#skills th { background-color: var(--color2); }
+#skills td { background-color: var(--color3); }
+/*Contact section*/
+#contact { background-color: var(--color6);}
+#contact table, #contact th, #contact td {
+  border: 1px solid var(--color1);
+  padding: 10px; 
+  border-collapse: collapse; 
+}
+#contact th { background-color: var(--color2); }
+#contact td { background-color: var(--color3); }
+
 
 /*cover-letter.html styles*/
 /*Cover-letter section*/
