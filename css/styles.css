@@ -51,12 +51,8 @@ body {
 
 /*cover-letter.html styles*/
 /*Cover-letter section*/
-#cover-letter {
-  background-color: var(--color4); 
-}
+#cover-letter { background-color: var(--color4); }
 
 /*career-goals.html styles*/
 /*career-goals section*/
-#career-goals {
-  background-color: var(--color4); 
-}
+#career-goals { background-color: var(--color4); }
