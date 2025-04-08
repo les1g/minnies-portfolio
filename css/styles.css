@@ -14,15 +14,6 @@ body {
   font-family: "Courier New", monospace;
 }
 
-/*Pink font*/
-.pink-text {
-  color: var(--color1); 
-  font-weight: bold;
-}
-
-/*pink highlighter*/
-.pink-highlight { background-color: var(--color1); }
-
 /*resume.html styles*/
 /*About section*/
 #about { background-color: var(--color2); }
