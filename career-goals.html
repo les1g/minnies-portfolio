@@ -1,121 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Minnie's Career Goals</title>
-  </head>
-  <body>
-    <header>
-      <h1>Career Goals</h1>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Minnie's Career Goals</title>
+</head>
+
+<body>
+  <header>
+    <h1>Career Goals</h1>
     <nav>
       <a href="resume.html">Resume</a>
       <a href="cover-letter.html">Cover Letter</a>
+      <a href="career-goals.html">Career Goals</a>
     </nav>
-    <hr />
-    <main>
-      <!-- Career Goals Section -->
-      <section id="career-goals">
-        <!--Image-->
-        <img
-          src="images/minnie-career.png"
-          alt="Minnie Mouse smiling in a pink polka-dot dress, representing her career aspirations"
-        />
-        <article>
-          <p>
-            As a lifelong fashion enthusiast and iconic style figure, I’m always
-            dreaming big. My career goals are built on creativity, compassion,
-            and the desire to make the world just a little more fabulous—one
-            outfit at a time!
-          </p>
-          <strong>Here are some of my aspirations for the future:</strong><br />
-          <ul>
-            <li>
-              Launch my own signature clothing line inspired by classic Disney
-              glamour and modern trends.
-            </li>
-            <li>
-              Promote sustainable fashion practices in my designs and encourage
-              eco-conscious choices.
-            </li>
-            <li>
-              Collaborate with up-and-coming designers and support diverse
-              voices in fashion.
-            </li>
-            <li>
-              Host a fashion talk show or mini-series to inspire young creatives
-              around the world.
-            </li>
-            <li>
-              Design exclusive red carpet looks for award shows and royal Disney
-              events.
-            </li>
-            <li>
-              Mentor the next generation of fashion designers through
-              internships and workshops.
-            </li>
-          </ul>
-          <p>
-            I believe that fashion is more than fabric — it’s confidence,
-            culture, and storytelling. My dream is to continue designing with
-            heart, while leaving a little sparkle wherever I go.
-          </p>
-        </article>
-      </section>
-      <!--Media Section-->
-      <section id="media">
-        <!--Video-->
-        <video width="400" height="240" muted controls>
-          <source src="media/minnie-shoot.mp4" type="video/mp4" />
-        </video>
-        <!--Audio-->
-        <audio muted controls>
-          <source src="media/its-fashion.mp3" type="audio/mpeg" />
-        </audio>
-      </section>
-      <section id="contact-form">
-        <!--Contact Form-->
-        <h2>Contact Me</h2>
-        <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+  </header>
+  <hr>
+  <main class="container">
+    <!-- Career Goals Section -->
+    <section id="career-goals">
+      <!--Image-->
+      <img src="images/minnie-career.png"
+        alt="Minnie Mouse smiling in a pink polka-dot dress, representing her career aspirations" />
+      <article>
+        <p>
+          As a lifelong fashion enthusiast and iconic style figure, I’m
+          always dreaming big. My career goals are built on creativity,
+          compassion, and the desire to make the world just a little more
+          fabulous—one outfit at a time!
+        </p>
+        <strong>Here are some of my aspirations for the future:</strong><br>
+        <ul>
+          <li>
+            Launch my own signature clothing line inspired by classic Disney
+            glamour and modern trends.
+          </li>
+          <li>
+            Promote sustainable fashion practices in my designs and
+            encourage eco-conscious choices.
+          </li>
+          <li>
+            Collaborate with up-and-coming designers and support diverse
+            voices in fashion.
+          </li>
+          <li>
+            Host a fashion talk show or mini-series to inspire young
+            creatives around the world.
+          </li>
+          <li>
+            Design exclusive red carpet looks for award shows and royal
+            Disney events.
+          </li>
+          <li>
+            Mentor the next generation of fashion designers through
+            internships and workshops.
+          </li>
+        </ul>
+        <p>
+          I believe that fashion is more than fabric — it’s confidence,
+          culture, and storytelling. My dream is to continue designing with
+          heart, while leaving a little sparkle wherever I go.
+        </p>
+      </article>
+    </section>
+    <!--Media Section-->
+    <section id="media">
+      <!--Video-->
+      <video width="400" height="240" muted controls>
+        <source src="media/minnie-shoot.mp4" type="video/mp4" />
+      </video>
+      <!--Audio-->
+      <audio muted controls>
+        <source src="media/its-fashion.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+    <!--Contact Form Section-->
+    <section id="contact-form">
+      <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <fieldset>
+          <legend>Contact Me</legend>
+
           <div>
             <label for="first">First Name:</label>
-            <input type="text" name="first" id="firstName" required />
+            <input type="text" id="first" name="first" required />
           </div>
+
           <div>
             <label for="last">Last Name:</label>
-            <input type="text" name="last" id="lastName" required />
+            <input type="text" id="last" name="last" required />
           </div>
+
           <div>
-            <label for="Company">Company Name:</label>
-            <input type="text" name="company" id="companyName" required />
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required />
           </div>
+
           <div>
             <label for="email">Email Address:</label>
-            <input type="email" name="email" id="emailAddress" required />
+            <input type="email" id="email" name="email" required />
           </div>
+
           <div>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phoneNumber" required />
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
           </div>
+
           <div>
-            <label for="message">Message:</label><br />
-            <textarea
-              name="message"
-              id="message"
-              rows="4"
-              cols="50"
-              required
-            ></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <input type="submit" value="Send Message" />
-        </form>
-      </section>
-    </main>
-    <hr />
-    <footer>
-      <p>Copyright &copy; 2025 Minnie Mouse</p>
-    </footer>
-  </body>
+        </fieldset>
+
+        <fieldset>
+          <legend>Best Contact Time</legend>
+          <input type="radio" id="am" name="bestTime" value="a.m." required />
+          <label for="am">a.m.</label>
+
+          <input type="radio" id="pm" name="bestTime" value="p.m." required />
+          <label for="pm">p.m.</label>
+
+          <input type="radio" id="anytime" name="bestTime" value="anytime" required />
+          <label for="anytime">Anytime</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <div>
+            <label for="contactMethod">Select:</label>
+            <select id="contactMethod" name="contactMethod" required>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="text">Text</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <p>Copyright &copy; 2025 Minnie Mouse</p>
+  </footer>
+</body>
+
 </html>
