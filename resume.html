@@ -1,144 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Minnie's Resume</title>
-  </head>
-  <body>
-    <header>
-      <h1>Resume</h1>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Minnie's Resume</title>
+</head>
+
+<body>
+  <header>
+    <h1>Resume</h1>
     <nav>
+      <a href="resume.html">Resume</a>
       <a href="cover-letter.html">Cover Letter</a>
       <a href="career-goals.html">Career Goals</a>
     </nav>
-    <hr />
-    <main>
-      <!--About Section-->
-      <section id="about">
-        <h2>About</h2>
+  </header>
+  <hr>
+  <main class="container">
+    <!--About Section-->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Hello! I am <span style="color: var(--color1)">Minnie</span> and
+        welcome to my resume. If you need a fashion designer, actress,
+        singer, icon, idol etc. you are not only absolutely at the right
+        place, but I am so happy you are here. I have been in the fashion
+        industry for over 70 years and have a passion for creating beautiful
+        outfits. I have a keen eye for detail and love to work with clients
+        to create custom designs that reflect their unique style. I am also
+        fluent in <span lang="fr">français</span>!
+      </p>
+    </section>
+    <!--Experience Section-->
+    <section id="experience">
+      <h2>Experience</h2>
+      <article>
+        <h3>Minnie's Boutique</h3>
+        <h4>
+          Fashion Designer <time datetime="1950-01-01">1950</time>-
+          <time datetime="2025-01-01">2025</time>
+        </h4>
+        <h5>Responsibilities:</h5>
+        <ul>
+          <li>Designing and <em>creating custom outfits</em></li>
+          <li>Styling clients for special events</li>
+          <li>Managing boutique operations</li>
+        </ul>
+        <h5>Achievements:</h5>
+        <ul>
+          <li>Featured in Vogue Magazine</li>
+          <li>Won Best Dressed at the Disney Gala</li>
+          <li>Designed outfits for Disney Princesses</li>
+        </ul>
+      </article>
+    </section>
+    <!--Education Section-->
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <h3>School of Classic Disney</h3>
+        <h4>
+          Bachelor of Arts in Fashion
+          <time datetime="1946-01-01">1946</time>-
+          <time datetime="1950-01-01">1950</time>
+        </h4>
+        <p><strong>GPA:</strong> 4.0</p>
+        <h5>Relevant Coursework:</h5>
+        <ul>
+          <li><em>Fashion Design</em></li>
+          <li>Textile Science</li>
+          <li>Fashion Illustration</li>
+          <li>Fashion Marketing</li>
+        </ul>
+        <h5>Honors:</h5>
+        <ul>
+          <li>Dean's List</li>
+          <li>Graduated with Honors</li>
+          <li>Best in Class</li>
+        </ul>
+      </article>
+    </section>
+    <!--Skills Section-->
+    <section id="skills">
+      <h2>Skills</h2>
+      <table>
+        <caption>
+          Overview of Key Skills and Certifications
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Languages</th>
+            <th scope="col">Technical Skills</th>
+            <th scope="col">Soft Skills</th>
+            <th scope="col">Certifications</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>English</td>
+            <td>Adobe Illustrator</td>
+            <td>Communication</td>
+            <td>Certified Fashion Designer</td>
+          </tr>
+          <tr>
+            <td>French</td>
+            <td>Photoshop</td>
+            <td>Teamwork</td>
+            <td>Certified Stylist</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+    <!--Contact Section-->
+    <section id="contact">
+      <h2>Contact Me!</h2>
+      <p>
+        If you would like to get in touch with me, please feel free to reach
+        out via any of the following methods:
+      </p>
+      <address>
         <p>
-          Hello! I am <span style="color: var(--color1)">Minnie</span> and
-          welcome to my resume. If you need a fashion designer, actress, singer,
-          icon, idol etc. you are not only absolutely at the right place, but I
-          am so happy you are here. I have been in the fashion industry for over
-          70 years and have a passion for creating beautiful outfits. I have a
-          keen eye for detail and love to work with clients to create custom
-          designs that reflect their unique style. I am also fluent in
-          <span lang="fr">français</span>!
+          Number: <a href="tel:+10123456789">(012)345-6789</a><br>
+          Email: <a href="mailto:minniemouse@clubhouse.com">minniemouse@clubhouse.com</a>
         </p>
-      </section>
-      <!--Experience Section-->
-      <section id="experience">
-        <h2>Experience</h2>
-        <article>
-          <h3>Minnie's Boutique</h3>
-          <h4>
-            Fashion Designer <time datetime="1950-01-01">1950</time>-
-            <time datetime="2025-01-01">2025</time>
-          </h4>
-          <h5>Responsibilities:</h5>
-          <ul>
-            <li>Designing and <em>creating custom outfits</em></li>
-            <li>Styling clients for special events</li>
-            <li>Managing boutique operations</li>
-          </ul>
-          <h5>Achievements:</h5>
-          <ul>
-            <li>Featured in Vogue Magazine</li>
-            <li>Won Best Dressed at the Disney Gala</li>
-            <li>Designed outfits for Disney Princesses</li>
-          </ul>
-        </article>
-      </section>
-      <!--Education Section-->
-      <section id="education">
-        <h2>Education</h2>
-        <article>
-          <h3>School of Classic Disney</h3>
-          <h4>
-            Bachelor of Arts in Fashion
-            <time datetime="1946-01-01">1946</time>-
-            <time datetime="1950-01-01">1950</time>
-          </h4>
-          <p><strong>GPA:</strong> 4.0</p>
-          <h5>Relevant Coursework:</h5>
-          <ul>
-            <li><em>Fashion Design</em></li>
-            <li>Textile Science</li>
-            <li>Fashion Illustration</li>
-            <li>Fashion Marketing</li>
-          </ul>
-          <h5>Honors:</h5>
-          <ul>
-            <li>Dean's List</li>
-            <li>Graduated with Honors</li>
-            <li>Best in Class</li>
-          </ul>
-        </article>
-      </section>
-      <!--Skills Section-->
-      <section id="skills">
-        <h2>Skills</h2>
-        <table>
-          <caption>
-            Overview of Key Skills and Certifications
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Languages</th>
-              <th scope="col">Technical Skills</th>
-              <th scope="col">Soft Skills</th>
-              <th scope="col">Certifications</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>English</td>
-              <td>Adobe Illustrator</td>
-              <td>Communication</td>
-              <td>Certified Fashion Designer</td>
-            </tr>
-            <tr>
-              <td>French</td>
-              <td>Photoshop</td>
-              <td>Teamwork</td>
-              <td>Certified Stylist</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <hr />
-      <!--Contact Section-->
-      <section id="contact">
-        <h2>Contact Me!</h2>
         <p>
-          If you would like to get in touch with me, please feel free to reach
-          out via any of the following methods:
+          Address<br>
+          123 Disney Lane<br>
+          Orlando, FL 32801
         </p>
-        <address>
-          <strong>Number</strong>
-          <a href="tel:+10123456789">(012)345-6789</a>
-          <br />
-          <strong>Email</strong>
-          <a href="mailto:minniemouse@clubhouse.com"
-            >minniemouse@clubhouse.com</a
-          >
-          <br />
-          <strong>Address</strong>
-          123 Disney Lane<br />Orlando, FL 32801
-        </address>
-      </section>
-    </main>
-    <hr />
-    <footer>
-      <div id="last-updated">
-        Last updated:
-        <!--date will go here-->
-      </div>
-      <p>Copyright &copy; 2025 Minnie Mouse</p>
-    </footer>
-  </body>
+      </address>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <div id="last-updated">
+      Last updated:
+    </div>
+    <p>Copyright &copy; 2025 Minnie Mouse</p>
+  </footer>
+  <script>
+    const date = new Date(document.lastModified);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("last-updated").append(" " + date.toLocaleDateString('en-US', options));
+    // Write to the console
+    console.log("Minnie Mouse's resume loaded successfully.");
+  </script>
+</body>
+
 </html>
