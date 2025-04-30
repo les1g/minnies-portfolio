@@ -187,3 +187,21 @@ form select {
   border-radius: 10px;
 }
 
+/*media query*/
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  video,
+  audio {
+    width: 100%;
+  }
+}
+
+
