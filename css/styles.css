@@ -1,3 +1,9 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 /*Color scheme variables*/
 :root {
   --color1: #ff69b4;
@@ -5,13 +11,129 @@
   --color3: #f7cddb;
   --color4: #f0b1c7;
   --color5: #f18eb1;
-  --color6: #f5568e;
 }
 
 /*Body style*/
 body {
   background-color: var(--color1); 
-  font-family: "Courier New", monospace;
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+
+/*Container style for all sections*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+/*Hover effect for links*/
+a:hover {
+  color: white;
+  background-color: var(--color5);
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*list item styling for all sections*/
+li {
+  list-style-type: none;
+  padding-left: 24px; 
+  margin-bottom: 12px; 
+  position: relative;
+  
+}
+
+li::before {
+  content: "\2764";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--color1);
+  font-size: 20px;
+}
+
+/*navbar styles*/
+nav a {
+  color: black; 
+  font-weight: 600;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--color5);
+  color: black;
+}
+
+nav {
+  background-color: var(--color3); 
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px black;
+}
+
+/* Video Styling */
+video {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 32px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px black;
+}
+
+/* Audio Styling */
+audio {
+  display: block;
+  margin: 24px auto;
+  width: 50%;
+  max-width: 600px;
+  background-color: var(--color3); 
+  border-radius: 8px;
+}
+
+/*contact form styles*/
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+form label {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+form input[type="submit"] {
+  margin-top: 24px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 /*resume.html styles*/
@@ -29,9 +151,10 @@ body {
   border: 1px solid var(--color1);
   padding: 10px; 
   border-collapse: collapse; 
+  
 }
 /*Contact section*/
-#contact { background-color: var(--color6);}
+#contact { background-color: var(--color1);}
 #contact th { background-color: var(--color2); }
 #contact td { background-color: var(--color3); }
 #contact table, #contact th, #contact td {
@@ -42,8 +165,25 @@ body {
 
 /*cover-letter.html styles*/
 /*Cover-letter section*/
-#cover-letter { background-color: var(--color4); }
+#cover-letter { background-color: var(--color2); }
 
 /*career-goals.html styles*/
 /*career-goals section*/
-#career-goals { background-color: var(--color4); }
+#career-goals { background-color: var(--color2); }
+#contact-form {
+  background-color: var(--color3);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px black;
+}
+
+/*multiple sections styles*/
+#about,
+#experience,
+#education,
+#skills,
+#contact {
+  padding: 16px 24px;
+  border-radius: 10px;
+}
+
