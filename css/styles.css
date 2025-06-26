@@ -204,4 +204,52 @@ form select {
   }
 }
 
+/* Welcome section styles */
+#welcome {
+  background-color: var(--color2);
+  padding: 16px 24px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#welcome h2 {
+  color: var(--color1);
+  margin-bottom: 1rem;
+}
+
+/* Portfolio buttons */
+.portfolio-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.portfolio-button {
+  display: inline-block;
+  background-color: var(--color1);
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+.portfolio-button:hover {
+  background-color: var(--color5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (min-width: 600px) {
+  .portfolio-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
 
