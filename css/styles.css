@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 /*Color scheme variables*/
@@ -11,13 +12,23 @@
   --color3: #f7cddb;
   --color4: #f0b1c7;
   --color5: #f18eb1;
+  --white: #ffffff;
+  --shadow: 0 4px 15px rgba(0,0,0,0.1);
+  --shadow-hover: 0 8px 25px rgba(0,0,0,0.15);
+  --border-radius: 12px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 /*Body style*/
 body {
-  background-color: var(--color1); 
+  background: linear-gradient(135deg, var(--color1) 0%, var(--color4) 100%);
   font-family: "Quicksand", sans-serif;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /*Container style for all sections*/
@@ -26,88 +37,152 @@ body {
   margin: 0 auto;
   padding: 1.5rem;
 }
-/*Hover effect for links*/
-a:hover {
-  color: white;
-  background-color: var(--color5);
-  text-decoration: underline;
+
+/* Header improvements */
+header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
 }
 
+/* Navigation improvements */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: var(--color1);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+nav a:hover {
+  color: white;
+  background: linear-gradient(45deg, var(--color1), var(--color5));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Typography improvements */
 h1 {
   text-align: center;
+  color: var(--color1);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--color1);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--color1);
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+/* Improved sections with card design */
+section {
+  background: var(--white);
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Image improvements */
+img {
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
 }
 
 /*list item styling for all sections*/
 li {
   list-style-type: none;
-  padding-left: 24px; 
-  margin-bottom: 12px; 
+  padding: 12px 0 12px 32px; 
+  margin-bottom: 8px; 
   position: relative;
-  
+  background: linear-gradient(90deg, var(--color2), transparent);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: linear-gradient(90deg, var(--color3), transparent);
+  transform: translateX(5px);
 }
 
 li::before {
-  content: "\2764";
+  content: "💖";
   position: absolute;
-  left: 0;
-  top: 2px;
-  color: var(--color1);
-  font-size: 20px;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
 }
 
-/*navbar styles*/
-nav a {
-  color: black; 
-  font-weight: 600;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+/* Image Styling - Modern version already defined above */
 
-nav a:hover {
-  background-color: var(--color5);
-  color: black;
-}
+/* Video Styling - Will be replaced by media styling below */
 
-nav {
-  background-color: var(--color3); 
-  padding: 8px 16px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Image Styling */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 16px auto;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px black;
-}
-
-/* Video Styling */
-video {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 32px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px black;
-}
-
-/* Audio Styling */
-audio {
-  display: block;
-  margin: 24px auto;
-  width: 50%;
-  max-width: 600px;
-  background-color: var(--color3); 
-  border-radius: 8px;
-}
+/* Audio Styling - Will be replaced by media styling below */
 
 /*contact form styles*/
+form {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+fieldset {
+  border: 2px solid var(--color2);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(145deg, var(--color2), var(--color3));
+}
+
+legend {
+  font-weight: 600;
+  color: var(--color1);
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
 form div {
   display: flex;
   flex-direction: column;
@@ -115,12 +190,9 @@ form div {
 }
 
 form label {
-  margin-bottom: 4px;
-  font-weight: bold;
-}
-
-form input[type="submit"] {
-  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--color1);
 }
 
 form input[type="text"],
@@ -129,86 +201,116 @@ form input[type="tel"],
 form textarea,
 form select {
   width: 100%;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 6px;
+  padding: 12px 16px;
+  border: 2px solid var(--color2);
+  border-radius: var(--border-radius);
   font-size: 16px;
-  box-sizing: border-box;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: var(--white);
 }
 
-/*resume.html styles*/
-/*About section*/
-#about { background-color: var(--color2); }
-/*Experience section*/
-#experience { background-color: var(--color3); }
-/*Education section*/
-#education { background-color: var(--color4); }
-/*Skills section*/
-#skills { background-color: var(--color5); }
-#skills th { background-color: var(--color2); }
-#skills td { background-color: var(--color3); }
-#skills table, #skills th, #skills td {
-  border: 1px solid var(--color1);
-  padding: 10px; 
-  border-collapse: collapse; 
-  
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--color1);
+  box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.1);
+  transform: translateY(-1px);
 }
-/*Contact section*/
-#contact { background-color: var(--color1);}
-#contact th { background-color: var(--color2); }
-#contact td { background-color: var(--color3); }
-#contact table, #contact th, #contact td {
-  border: 1px solid var(--color1);
-  padding: 10px; 
-  border-collapse: collapse; 
+
+form input[type="submit"] {
+  background: linear-gradient(45deg, var(--color1), var(--color5));
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 24px;
+}
+
+form input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Radio button styling */
+form input[type="radio"] {
+  margin-right: 8px;
+  accent-color: var(--color1);
+}
+
+/* Media elements styling */
+video,
+audio {
+  display: block;
+  margin: 24px auto;
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+/*resume.html styles - Updated for modern card design*/
+/* All sections now use the base section styling with white background and shadows */
+/* Individual section styling is handled by the main section styles above */
+
+/* Table improvements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th {
+  background: linear-gradient(45deg, var(--color1), var(--color5));
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+
+td {
+  background: var(--color2);
+  padding: 12px;
+  border-bottom: 1px solid var(--color3);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: var(--color3);
+  transition: all 0.3s ease;
 }
 
 /*cover-letter.html styles*/
-/*Cover-letter section*/
-#cover-letter { background-color: var(--color2); }
+/* Uses base section styling */
 
 /*career-goals.html styles*/
-/*career-goals section*/
-#career-goals { background-color: var(--color2); }
+/* Uses base section styling */
+
+/* Media section specific styling */
+#media {
+  text-align: center;
+}
+
+/* Contact form section improvements */
 #contact-form {
-  background-color: var(--color3);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px black;
+  background: linear-gradient(135deg, var(--color2), var(--color3));
 }
 
-/*multiple sections styles*/
-#about,
-#experience,
-#education,
-#skills,
-#contact {
-  padding: 16px 24px;
-  border-radius: 10px;
-}
-
-/*media query*/
-@media (max-width: 600px) {
-  .container {
-    padding: 16px;
-  }
-
-  nav a {
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  video,
-  audio {
-    width: 100%;
-  }
-}
-
-/* Welcome section styles */
+/* Welcome section uses base section styling but with center alignment */
 #welcome {
-  background-color: var(--color2);
-  padding: 16px 24px;
-  border-radius: 10px;
   text-align: center;
 }
 
@@ -228,27 +330,83 @@ form select {
 
 .portfolio-button {
   display: inline-block;
-  background-color: var(--color1);
+  background: linear-gradient(45deg, var(--color1), var(--color5));
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   font-weight: 600;
   transition: all 0.3s ease;
-  min-width: 200px;
+  min-width: 220px;
   text-align: center;
+  box-shadow: var(--shadow);
 }
 
 .portfolio-button:hover {
-  background-color: var(--color5);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Footer styling */
+footer {
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+}
+
+footer p {
+  color: var(--color1);
+  font-weight: 600;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .portfolio-button {
+    min-width: 100%;
+  }
+
+  video,
+  audio {
+    width: 100%;
+  }
 }
 
 @media (min-width: 600px) {
   .portfolio-links {
     flex-direction: row;
     justify-content: center;
+  }
+  
+  nav a {
+    white-space: nowrap;
   }
 }
 
