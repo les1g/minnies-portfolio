@@ -1,88 +1,25 @@
-# Minnie Mouse Portfolio Website
+# About
+This project is a four-page website built using HTML, CSS, and JavaScript. It is deployed with GitHub Pages. Its purpose is to showcase web development fundamentals in a fun way by creating a portfolio website for Minnie Mouse, styled as if she were a fashion professional.
 
-This is a fun school project I created to showcase my HTML, CSS, and JavaScript skills. I decided to make a portfolio website for Minnie Mouse as a creative way to demonstrate web development fundamentals while keeping it entertaining.
+* **Home Page**: Welcomes users with navigation and an introduction.  
 
-## About This Project
+* **Resume Page**: Displays her "professional experience" using tables and lists.  
 
-For my web development class, I needed to create a multi-page website that showed I could handle HTML structure, CSS styling, and basic JavaScript. Instead of making another boring personal portfolio, I thought it would be more interesting to create one for Minnie Mouse as if she were a fashion professional.
+* **Cover Letter Page**: Provides a personal introduction with styled typography.  
 
-## Live Website
+* **Career Goals Page**: Includes media elements (video/audio) and a working contact form.  
 
-You can check out the live site here: https://les1g.github.io/minnies-portfolio/
+# What I Learned
+This project helped me practice writing clean, semantic HTML5, styling with CSS (including flexbox, gradients, and variables), and making responsive designs that adapt to different screen sizes. I also gained experience with Git for version control, deploying with GitHub Pages, and adding interactive elements like hover effects and smooth transitions.
 
-## What's Included
+# How To Run
+This project is live on GitHub Pages: [https://les1g.github.io/minnies-portfolio/](https://les1g.github.io/minnies-portfolio/)  
 
-The website has four main pages:
-- Homepage with navigation and introduction
-- Resume page showing her "professional experience" 
-- Cover letter page with a personal introduction
-- Career goals page with media elements and a contact form
+Alternatively, you may run locally:
 
-## Technical Stuff I Learned
-
-This project helped me practice:
-- Writing clean, semantic HTML5
-- CSS styling with modern techniques like flexbox and gradients
-- Making responsive designs that work on phones and computers
-- Using Git for version control
-- Deploying websites with GitHub Pages
-- Adding interactive elements and hover effects
-
-## Design Choices
-
-I went with a pink color scheme since it fits Minnie's character. The design uses:
-- Card-based layout with shadows
-- Gradient backgrounds
-- Smooth animations when you hover over things
-- Sticky navigation that stays at the top when you scroll
-- Forms that actually work and look modern
-
-## File Structure
-
-```
-portfolio-website/
-├── index.html
-├── resume.html  
-├── cover-letter.html
-├── career-goals.html
-├── css/styles.css
-├── images/minnie-career.png
-└── media/
-    ├── its-fashion.mp3
-    └── minnie-shoot.mp4
+Clone the repository:  
+```bash
+git clone https://github.com/les1g/minnies-portfolio.git
 ```
 
-## What I Built
-
-Each page demonstrates different skills:
-- Index page: Navigation and layout basics
-- Resume: Tables, lists, and structured content
-- Cover letter: Typography and text formatting  
-- Career goals: Forms, media elements (video/audio), and interactivity
-
-The CSS includes modern features like CSS variables, flexbox layouts, smooth transitions, and responsive design that adapts to different screen sizes.
-
-## Deployment
-
-I used GitHub Pages to host the site for free. It automatically updates whenever I push changes to the main branch, which is pretty convenient for a student project.
-
-## Reflection
-
-This was a good learning experience because it let me be creative while still hitting all the technical requirements. Working with a fun theme like Minnie Mouse made the project more enjoyable than just building another generic portfolio site.
-
-The biggest challenges were getting the responsive design right and making sure all the animations worked smoothly across different browsers. I also learned a lot about organizing CSS code and keeping everything maintainable.
-
-## Future Ideas
-
-If I continue working on this, I might add:
-- More JavaScript interactivity
-- A dark mode option
-- Better form validation
-- Some scroll animations
-- Maybe a blog section
-
-This project shows I can build a complete website from scratch using HTML, CSS, and JavaScript while keeping it visually appealing and user-friendly.
-
----
-
-*Note: This is a student project for educational purposes. Disney characters are used only for learning and portfolio demonstration.*
+Open `index.html` in your browser.
